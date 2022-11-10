@@ -35,63 +35,69 @@
           <div class="form__headline">
             <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
           </div>
-          <div class="form__input">
-            <input
-              type="text"
-              placeholder="First Name"
-              class="form__input--text"
-            />
-            <p class="form__input--error">First Name cannot be empty</p>
-            <img
-              src="./images/icon-error.svg"
-              alt="Error icon"
-              class="form__input--img"
-            />
+          <div class="form__container">
+            <div class="form__input">
+              <input
+                type="text"
+                autocomplete="off"
+                placeholder="First Name"
+                class="form__input--text"
+              />
+              <p class="form__input--error">First Name cannot be empty</p>
+              <img
+                src="./images/icon-error.svg"
+                alt="Error icon"
+                class="form__input--img"
+              />
+            </div>
+            <div class="form__input">
+              <input
+                type="text"
+                autocomplete="off"
+                placeholder="Last Name"
+                class="form__input--text"
+              />
+              <p class="form__input--error">Last Name cannot be empty</p>
+              <img
+                src="./images/icon-error.svg"
+                alt="Error icon"
+                class="form__input--img"
+              />
+            </div>
+            <div class="form__input">
+              <input
+                type="text"
+                autocomplete="off"
+                placeholder="Email Address"
+                class="form__input--text input__email"
+              />
+              <p class="form__input--error">Looks like this is not an email</p>
+              <img
+                src="./images/icon-error.svg"
+                alt="Error icon"
+                class="form__input--img"
+              />
+            </div>
+            <div class="form__input">
+              <input
+                type="password"
+                autocomplete="off"
+                placeholder="Password"
+                class="form__input--text"
+              />
+              <p class="form__input--error">Password cannot be empty</p>
+              <img
+                src="./images/icon-error.svg"
+                alt="Error icon"
+                class="form__input--img"
+              />
+            </div>
+            <button class="form__button">CLAIM YOUR FREE TRIAL</button>
+            <p class="form__terms">
+              By clicking the button, you are agreeing to our
+              <a href="#">Terms and Services</a>
+            </p>
           </div>
-          <div class="form__input">
-            <input
-              type="text"
-              placeholder="Last Name"
-              class="form__input--text"
-            />
-            <p class="form__input--error">Last Name cannot be empty</p>
-            <img
-              src="./images/icon-error.svg"
-              alt="Error icon"
-              class="form__input--img"
-            />
-          </div>
-          <div class="form__input">
-            <input
-              type="text"
-              placeholder="Email Address"
-              class="form__input--text"
-            />
-            <p class="form__input--error">Looks like this is not an email</p>
-            <img
-              src="./images/icon-error.svg"
-              alt="Error icon"
-              class="form__input--img"
-            />
-          </div>
-          <div class="form__input">
-            <input
-              type="text"
-              placeholder="Password"
-              class="form__input--text"
-            />
-            <p class="form__input--error">Password cannot be empty</p>
-            <img
-              src="./images/icon-error.svg"
-              alt="Error icon"
-              class="form__input--img"
-            />
-          </div>
-          <button class="form__button">CLAIM YOUR FREE TRIAL</button>
-          <p class="form__terms">
-            By clicking the button, you are agreeing to our
-            <span>Terms and Services</span>
-          </p>
         </form>
       </main>
     </div>
@@ -109,5 +115,7 @@
         >.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

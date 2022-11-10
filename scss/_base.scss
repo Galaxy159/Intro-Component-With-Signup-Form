@@ -35,10 +35,12 @@ body {
 
 .container {
   max-width: 144rem;
+  height: 80rem;
   background: url(../images/bg-intro-desktop.png) no-repeat;
   background-color: $color-primary-red;
   margin: 0 auto;
-  padding-block: 12.1rem;
+  display: grid;
+  place-content: center;
 }
 
 .main {
@@ -47,6 +49,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 4.5rem;
+  align-items: center;
 }
 
 .attribution {

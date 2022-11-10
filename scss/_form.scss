@@ -1,0 +1,111 @@
+.form {
+  display: grid;
+  row-gap: 2.4rem;
+  &__headline {
+    max-width: 54rem;
+    height: 6rem;
+    color: white;
+    background-color: $color-blue;
+    box-shadow: 0 0.8rem 0 rgba(0, 0, 0, 0.14688);
+    border-radius: 1rem;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    letter-spacing: 0.267857px;
+
+    display: grid;
+    place-content: center;
+
+    & span {
+      font-weight: 400;
+    }
+  }
+
+  &__container {
+    max-width: 54rem;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 1rem;
+    display: grid;
+    row-gap: 2rem;
+    box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
+  }
+  &__input {
+    position: relative;
+    &--text {
+      width: 46rem;
+      height: 5.6rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      line-height: 2.6rem;
+      letter-spacing: 0.25px;
+      color: $color-blue-dark;
+      padding: 1.5rem 3.2rem;
+      border-radius: 0.5rem;
+      border: 1px solid #dedede;
+
+      &:focus {
+        outline: 1px solid #5e54a4;
+      }
+    }
+    &--error {
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.6rem;
+      color: $color-primary-red;
+      text-align: right;
+      display: none;
+      transition: all 0.2s;
+      margin-top: 0.6rem;
+    }
+    &--img {
+      position: absolute;
+      top: 1.6rem;
+      right: 2.7rem;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+  }
+
+  &__button {
+    background-color: $color-primary-green;
+    width: 46rem;
+    height: 5.6rem;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.0908818);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    line-height: 2.6rem;
+    cursor: url(../images/pointer.svg), auto;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #77e2b3;
+    }
+  }
+
+  &__terms {
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    color: $color-grayish-blue;
+    justify-self: center;
+    margin-top: -1rem;
+
+    & a {
+      font-weight: 700;
+      color: $color-primary-red;
+      text-decoration: none;
+      cursor: url(../images/pointer.svg), auto;
+    }
+  }
+}
+
+.show {
+  opacity: 1;
+  display: block;
+}
