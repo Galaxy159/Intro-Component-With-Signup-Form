@@ -1,8 +1,11 @@
 .form {
   display: grid;
   row-gap: 2.4rem;
+
+  @include respond(phone) {
+    grid-template-columns: 32.7rem;
+  }
   &__headline {
-    max-width: 54rem;
     height: 6rem;
     color: white;
     background-color: $color-blue;
@@ -20,16 +23,27 @@
     & span {
       font-weight: 400;
     }
+
+    @include respond(phone) {
+      padding: 2rem 7rem;
+      height: 8.8rem;
+      text-align: center;
+    }
   }
 
   &__container {
-    max-width: 54rem;
     padding: 4rem;
     background-color: white;
     border-radius: 1rem;
     display: grid;
     row-gap: 2rem;
     box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
+    @include respond(phone) {
+      grid-template-columns: 27.9rem;
+      place-content: center;
+      row-gap: 1.6rem;
+      padding: 2.4rem;
+    }
   }
   &__input {
     position: relative;
@@ -47,6 +61,11 @@
 
       &:focus {
         outline: 1px solid #5e54a4;
+      }
+
+      @include respond(phone) {
+        width: 27.9rem;
+        padding: 1.5rem 2rem;
       }
     }
     &--error {
@@ -86,6 +105,10 @@
     &:hover {
       background-color: #77e2b3;
     }
+
+    @include respond(phone) {
+      width: 27.9rem;
+    }
   }
 
   &__terms {
@@ -101,6 +124,13 @@
       color: $color-primary-red;
       text-decoration: none;
       cursor: url(../images/pointer.svg), auto;
+    }
+
+    @include respond(phone) {
+      text-align: center;
+      padding-inline: 2rem;
+      line-height: 2.1rem;
+      max-top: -0.4rem;
     }
   }
 }

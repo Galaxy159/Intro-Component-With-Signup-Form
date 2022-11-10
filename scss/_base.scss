@@ -8,7 +8,7 @@ $color-grayish-blue: #b9b6d3;
 // Media
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 1440px) {
+    @media (max-width: 1000px) {
       @content;
     }
   }
@@ -41,15 +41,24 @@ body {
   margin: 0 auto;
   display: grid;
   place-content: center;
+
+  @include respond(phone) {
+    max-width: 37.5rem;
+    height: 100rem;
+  }
 }
 
 .main {
-  max-width: 111rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 4.5rem;
   align-items: center;
+
+  @include respond(phone) {
+    max-width: 32.7rem;
+    grid-template-columns: 1fr;
+  }
 }
 
 .attribution {
